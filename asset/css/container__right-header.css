@@ -1,0 +1,129 @@
+
+.app-content {
+    padding-top: 20px;
+}
+
+.container__right__nav__wrap {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    background-color: #ededed;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.nav__wrap__btn-new,
+.nav__wrap__btn-popular,
+.nav__wrap__btn-trenning {
+    min-width: 92px;
+    margin-right: 10px;
+    color: var(--color-textchinh);
+    background-color: var(--color--white);
+}
+
+.nav__wrap__sapxep {
+    color: #555;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 15px 0 20px;
+}
+
+.nav__wrap__search:hover>.nav__wrap__search__list {
+    display: block;
+}
+.nav__wrap__search {
+    width: 200px;
+    height: 34px;
+    background-color: var(--color--white);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 0 12px;
+    cursor: pointer;
+}
+
+.nav__wrap__search__rate {
+    font-size: 1.4rem;
+    color: var(--color-textchinh);
+
+}
+
+.nav__wrap__search__icon {
+    font-size: 1.2rem;
+    color: var(--color-textchinh);
+
+}
+
+.nav__wrap__wire-oder {
+    margin-left: auto;
+    font-size: 1.4rem;
+    margin-right: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.wire-oder__number {
+    margin: 0 24px;
+    font-weight: 600;
+}
+
+.wire-oder__number-first {
+    color: var(--color-chudao);
+
+}
+
+.wire-oder__link {
+    text-decoration: none;
+    color: var(--color-textchinh);
+    font-size: 1.4rem;
+    width: 34px;
+    height: 34px;
+    background-color: var(--color--white);
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__wrap__search__list ::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    top: -1px;
+    left: 0;
+    position: absolute;
+   
+}
+.nav__wrap__search__list {
+    list-style: none;
+    position: absolute;
+    top: calc(100% + 1px);
+    background-color: var(--color--white);
+    width: 100%;
+    left: 0;
+    animation:mo-hien .3s linear;
+    display: none;
+    z-index: 1;
+}
+
+.nav__wrap__search__item:hover {
+    color: var(--color-chudao);
+}
+
+.nav__wrap__search__item {
+    height: 34px;
+    padding-left: 10px;
+    line-height: 34px;
+    font-size: 1.4rem;
+    color: var(--color-textchinh);
+
+}
+.wire-oder__link__left{
+   color: var(--color-text-mo);
+    background-color: #ffffff94;
+}

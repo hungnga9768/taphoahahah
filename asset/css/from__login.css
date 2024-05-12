@@ -1,0 +1,41 @@
+.formlogin {
+    
+    background-color: aliceblue;
+    border-radius: 2px;
+    position: relative;
+    display: none;
+    
+    transition: transform 1s linear;
+    transform :rotatey(180deg);
+}
+
+.wapFormLogin__link {
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: end;
+    column-gap: 10px;
+    margin-top: 2rem;
+}
+
+.wapFormLogin__link__text {
+    text-decoration: none;
+    color: var(--color-textchinh);
+    display: block;
+    margin: 0 2px;
+}
+
+.wapFormLogin__link__text--laypas {
+    color: rgb(212, 93, 19);
+}
+
+.wapFormLogin__link__text--help {
+    color: rgba(58, 59, 59, 0.463);
+}
+
+.modal__wrap {
+    overflow: hidden;
+    transition: transform 1s ease-in-out, height .3s linear;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d;
+    transform: rotateY(0) ;
+}

@@ -1,0 +1,158 @@
+:root {
+    --color-textchinh: #333;
+    --color-chudao: #ee4d2d;
+    --color-text-mo1: #757575;
+    --color-text-mo: #cccccc;
+    --color--trangnhat: #f7f7f7;
+    --color--white: #ffff;
+    --height--navbar: 3.4rem;
+    --color--primary: #f86333;
+    --height--header: 12rem;
+    --height--nav-mobile: 46px;
+    --height--search: calc(var(--height--header) - var(--height--navbar))
+}
+
+.header {
+    z-index: 2;
+    width: 100%;
+
+    background-image: linear-gradient(to bottom, #ee4d2d, #ff7337);
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: var(--height--navbar)
+}
+
+.navbar__list__link i,
+.navbar__list__item i {
+    font-size: 1.6rem;
+    line-height: 3.4rem;
+    margin: 0 0.2rem;
+}
+
+.navbar__list {
+    display: flex;
+    position: relative;
+    z-index: 3;
+}
+
+.navbar__list__link {
+    text-decoration: none;
+}
+
+.navbar__list__link,
+.navbar__list__item {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.3rem;
+    line-height: 3.4rem;
+
+    color: var(--color--white)
+}
+
+.navbar__list__item {
+    margin: 0 0.8rem;
+    list-style-type: none;
+}
+
+.navbar__list .navbar__list__item:last-of-type {
+    position: relative;
+}
+
+.navbar__list .navbar__list__item:last-of-type::after {
+    content: "";
+    position: absolute;
+    height: 1.3rem;
+    left: -0.8rem;
+    bottom: 0;
+    transform: translateY(-80%);
+    border-left: 1px #fa745d solid;
+}
+
+.navbar__list__item:hover,
+.navbar__list__link:hover {
+    cursor: pointer;
+    color: #fcc7c1;
+}
+
+.navbar__list:first-child .navbar__list__item:nth-child(2) {
+    cursor: text;
+    color: var(--color--white);
+}
+
+.navbar__list__item--info:hover>.navbar__list__item--info__list {
+    display: block;
+}
+
+.navbar__list__item--info {
+    color: #fff8f8;
+    position: relative;
+
+}
+
+.navbar__list__item--info__img {
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    margin-right: 8px;
+}
+
+.navbar__list__item--info__list::after {
+    content: "";
+    position: absolute;
+    right: 26px;
+    border: solid;
+    border-width: 10px;
+    border-color: transparent transparent #ffff transparent;
+    top: -20px;
+    cursor: pointer;
+}
+
+.navbar__list__item--info__list::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 10px;
+    top: -10px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.navbar__list__item--info__list {
+    transform-origin: 50% 0;
+    --transform-to: 1;
+    --transform-from: 0;
+    list-style: none;
+    width: 130px;
+    position: absolute;
+    top: 118%;
+    right: 0px;
+    background-color: #ffffff;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.212);
+    animation: mo-hien .3s linear;
+    display: none;
+    z-index: 2;
+}
+
+.navbar__list__item--info__item a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar__list__item--info__item:last-child>a {
+    color: rgb(12, 172, 118);
+}
+
+.navbar__list__item--info__item:hover {
+    background-color: var(--color--trangnhat);
+}
+
+.navbar__list__item--info__item {
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}

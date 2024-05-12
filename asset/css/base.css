@@ -1,0 +1,200 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+
+}
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6rem;
+
+}
+
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.grid__colum-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__colum-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__colum-8 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+
+}
+
+.grid--mannho {
+    width: 100%;
+}
+
+.modal__all {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+    z-index: 3;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+    z-index: 3;
+}
+
+
+
+.modal__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.265);
+    animation: xuathien 0.1s ease-out;
+    transform-origin: 50% 50%;
+}
+
+@keyframes xuathien {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0);
+        visibility: hidden;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes mo-truot {
+    from {
+        transform: translateX(var(--trasform__from-trans));
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(var(--trasform__to-trans));
+
+    }
+}
+
+@keyframes mo-hien {
+    from {
+        transform: scale(var(--transform-from));
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(var(--transform-to));
+        opacity: 1;
+
+    }
+}
+
+@keyframes mo-an {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes xuathien--login {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0) rotateY(180deg);
+        visibility: hidden;
+    }
+
+    to {
+        transform: scale(1) rotateY(180deg);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.modal__wrap {
+    position: relative;
+    margin: auto;
+}
+
+
+.hover--mauxam:hover {
+    background-color: rgba(83, 83, 83, 0.482);
+}
+
+.btn {
+    outline: none;
+    text-align: center;
+    line-height: 3.4rem;
+    cursor: pointer;
+    border-radius: 2px;
+    min-width: 12rem;
+    height: 3.4rem;
+    border: none;
+    color: var(--color--white);
+    background-color: var(--color-chudao);
+}
+
+.btn:hover {
+    background-color: #f05b41;
+}
+
+/* Phân trang theo số trang  */
+.pagination__list {
+    display: flex;
+    list-style: none;
+}
+
+
+.pagination__list__item-number__link-color {
+    background-color: var(--color-chudao);
+
+}
+
+.pagination__list__item-number a {
+    height: 30px;
+    min-width: 40px;
+    display: block;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    color: var(--color-text-mo1);
+    font-size: 1.8rem;
+    margin: 0 12px;
+
+}

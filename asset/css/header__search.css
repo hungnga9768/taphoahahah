@@ -1,0 +1,412 @@
+.header__search {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: var(--height--search)
+}
+
+.search__logo {
+    height: 60px;
+    width: 162px;
+    margin: 0 40px 0 10px;
+}
+
+.search__logo__vector {
+    width: 100%;
+    height: 100%;
+}
+
+.search__box {
+    display: flex;
+    height: 40px;
+    flex: 1;
+    background-color: var(--color--white);
+    border-radius: 2px;
+    align-items: center;
+}
+
+.search__giohang {
+
+    width: 40px;
+    z-index: 2;
+    width: 140px;
+
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.search__giohang i {
+    font-size: 2.4rem;
+    line-height: 40px;
+    color: var(--color--white);
+
+}
+
+.search__box__wraplayout {
+
+    flex: 1;
+    height: 100%;
+    position: relative;
+}
+
+.search__box__textsearch:focus~.search__box__listsearched {
+    display: block;
+}
+
+.search__box__textsearch {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color: #5c5c5c;
+    padding: 16px;
+    font-size: 1.4rem;
+
+}
+
+.search__box__loc:hover>.box__loc__list {
+    display: block;
+}
+
+.search__box__loc {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #ccc;
+    height: 26px;
+    padding: 0 10px 0 10px;
+    column-gap: 6px;
+    cursor: pointer;
+
+}
+
+.search__box__loc__text {
+    color: #5c5c5c;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.search__box__loc__icon {
+    color: #5c5c5c;
+    position: relative;
+    top: 2px;
+}
+
+.search__box__btn i {
+    color: var(--color--white);
+}
+
+.search__box__btn:hover {
+    background-color: chocolate;
+    cursor: pointer;
+}
+
+.search__box__btn {
+    outline: none;
+    border: none;
+    height: 34px;
+    width: 80px;
+    background-color: var(--color--primary);
+    border-radius: 2px;
+    margin-right: 3px;
+}
+
+.box__loc__list::after {
+    content: "";
+    width: 100%;
+    height: 16px;
+    position: absolute;
+    top: -16px;
+    right: 0;
+}
+
+.box__loc__list {
+    --transform-to: 1;
+    --transform-from: 0;
+    position: absolute;
+    width: 10rem;
+    background-color: var(--color--white);
+    list-style: none;
+    top: 150%;
+    right: 0;
+    box-shadow: 0 0 2px #dadada;
+    font-size: 1.2rem;
+    display: none;
+    animation: mo-hien .3s linear;
+    border-radius: 2px;
+    transform-origin: 50% 0;
+    z-index: 1;
+}
+
+.box__loc__item i {
+    margin-left: 4px;
+    display: none;
+}
+
+.box__loc__item--cam i {
+    color: var(--color--primary);
+    display: inline-block;
+}
+
+.box__loc__item:hover {
+    background-color: var(--color--trangnhat);
+}
+
+.box__loc__item:first-child {
+    border-radius: 2px 2px 0 0;
+}
+
+.box__loc__item:last-child {
+    border-radius: 0 0 2px 2px;
+}
+
+.box__loc__item {
+    height: 34px;
+    line-height: 34px;
+    padding-left: 20px;
+    color: #5c5c5c;
+}
+
+.search__box__listsearched {
+    --transform-to: 1;
+    --transform-from: 0.5;
+    border-radius: 2px;
+    overflow: hidden;
+    z-index: 2;
+    animation: mo-hien .3s linear;
+    transform-origin: 50% 0;
+    position: absolute;
+    display: none;
+    width: calc(100% - 16px);
+    background-color: var(--color--white);
+    top: calc(100% + 2px);
+    color: var(--color-text-mo);
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.208);
+    will-change: transform;
+}
+
+.listsearched__header h3 {
+    line-height: 30px;
+    padding-left: 8px;
+    font-size: 1.4rem;
+}
+
+.listsearched__header {
+    width: 100%;
+    height: 30px;
+}
+
+.listsearched__container {
+    width: 100%;
+    list-style: none;
+}
+
+.listsearched__list:hover {
+    background-color: var(--color--trangnhat);
+}
+
+.listsearched__list {
+    height: 34px;
+}
+
+.listsearched__list__link {
+    text-decoration: none;
+    color: #5c5c5c;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: 8px;
+    height: 100%;
+    width: 100%;
+    display: block;
+    line-height: 30px;
+}
+
+.search__giohang__wrap:hover>.giohang__wrap__list {
+    display: block;
+}
+
+.search__giohang__wrap {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+.giohang__wrap__list .giohang__wrap__list-no__img {
+    display: none;
+}
+
+.giohang__wrap__list p {
+    display: none;
+}
+
+.giohang__wrap__list-no .giohang__wrap__list--bell {
+    display: none;
+
+}
+
+.giohang__wrap__list-no p {
+    color: #5c5c5c;
+    font-size: 1.4rem;
+    display: block;
+    text-align: center;
+}
+
+.giohang__wrap__list-no .giohang__wrap__list-no__img {
+    width: 30rem;
+    margin: 20px auto 10px auto;
+    display: block;
+}
+
+.giohang__wrap__list::after {
+    content: "";
+    border-style: solid;
+    border-width: 12px 16px;
+    border-color: transparent transparent #ffff transparent;
+    position: absolute;
+    top: -22px;
+    right: 2px;
+    cursor: pointer;
+}
+
+.giohang__wrap__list-no {
+    width: 40rem;
+    height: 25rem;
+}
+
+.giohang__wrap__list {
+    --transform-to: 1;
+    --transform-from: 0;
+    z-index: 1;
+    width: 40rem;
+    cursor: default;
+    position: absolute;
+    top: calc(100% + 2px);
+    right: 0px;
+    display: none;
+    transform-origin: 90% 0;
+    background-color: var(--color--white);
+    box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.226);
+    animation: mo-hien .3s linear;
+    text-align: left;
+}
+
+.search__giohang__wrap__bell {
+    position: absolute;
+    background-color: #ffff;
+    border: 1px solid rgb(212, 61, 6);
+    line-height: 1.6rem;
+    font-size: 1.4rem;
+    padding: 0 6px;
+    border-radius: 50%;
+    color: rgb(215, 64, 8);
+    text-align: center;
+    top: 0;
+    right: -2px;
+    cursor: pointer;
+
+}
+
+.giohang__wrap__list__header {
+    width: 100%;
+    font-size: 1.4rem;
+
+    color: var(--color-text-mo);
+    padding: 8px;
+    line-height: 30px;
+
+
+}
+
+.giohang__wrap__list__listcart {
+    list-style: none;
+    width: 100%;
+    max-height: 56vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+}
+
+.giohang__wrap__list__itemcart {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.list__imgcart {
+    width: 40px;
+    border: 2px solid var(--color--trangnhat);
+    margin-left: 8px;
+
+}
+
+.list__itemcart__wrap {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+
+.list__itemcart {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.wrapcart__namecart {
+    font-size: 1.4rem;
+    color: #5c5c5c
+}
+
+.wrapcart__giacart {
+    font-size: 1.4rem;
+    color: rgb(230, 100, 8);
+}
+
+.wrapcart__daunhan {
+    color: var(--color-text-mo1);
+    font-size: 1rem;
+    margin: 0 4px;
+}
+
+.wrapcart__quantity {
+    color: var(--color-text-mo1);
+    font-size: 1.2rem;
+}
+
+.list__itemcart__aboutcart {
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutcart__textcart {
+    font-size: 1.4rem;
+    color: #757575;
+}
+
+.aboutcart__remosecart:hover {
+    cursor: pointer;
+    color: tomato;
+}
+
+.aboutcart__remosecart {
+    font-size: 1.4rem;
+    color: var(--color-textchinh);
+    font-weight: 600;
+}
+
+.giohang__wrap__list__btn {
+    background-color: tomato;
+    float: right;
+    margin: 8px;
+}
+
+.giohang__wrap__list__itemcart:hover {
+    background-color: #e7e7e7;
+}

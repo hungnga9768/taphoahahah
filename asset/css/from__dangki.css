@@ -1,0 +1,143 @@
+.formDangki {
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    border-radius: 2px;
+    position: relative;
+    display: none;
+    transition: transform 1s linear;
+ 
+
+}
+
+.wrapFormDangKi {
+    width: 100%;
+    padding: 32px 32px 0;
+}
+
+.wrapFormDangKi__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapFormDangKi__header__text {
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
+
+.wrapFormDangKi__header__btn {
+    outline: none;
+    height: 3.2rem;
+    width: 8.6rem;
+    background-color: transparent;
+    font-weight: 600;
+    border: none;
+    color: rgb(212, 93, 19);
+    cursor: pointer;
+
+}
+
+.wrapFormDangKi__container {
+    width: 100%;
+}
+
+.wrapFormDangKi__container__input:focus {
+    border-color: black;
+}
+
+.wrapFormDangKi__container__input {
+    width: 100%;
+    height: 4rem;
+    border-radius: 2px;
+    margin-top: 1.6rem;
+    padding: 012px;
+    font-size: 1.4rem;
+    outline: none;
+    border: 1px solid rgba(87, 87, 87, 0.363)
+}
+
+.wapFormDangKi__text {
+    margin-top: 16px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.wapFormDangKi__text__link {
+    text-decoration: none;
+    color: rgb(212, 93, 19);
+    cursor: pointer;
+}
+
+
+.wrapFormDangKi__btn {
+    display: flex;
+
+    justify-content: end;
+    margin: 5rem 0 2rem 0;
+}
+
+.wrapFormDangKi__btn__fooder {
+    width: 14.2rem;
+    height: 3.4rem;
+   
+}
+
+.wrapFormDangKi__btn__fooder--retun:hover {
+    background-color: rgb(218, 218, 218);
+}
+.wrapFormDangKi__btn__fooder--retun {
+    background-color: transparent;
+    border: none;
+    margin-right: 6px;
+    color: #5c5c5c;
+}
+
+.wrapFormDangKi__btn__fooder--SignUP {
+    background-color: tomato;
+    border: none;
+}
+
+.wrapFormDangKi__link {
+    display: flex;
+    background-color: rgba(73, 72, 72, 0.103);
+    padding: 15px 32px;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.wrapFormDangKi__link__app {
+    height: 34px;
+    flex: 1;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.wrapFormDangKi__link__app--Facebook {
+    background-color: #3A5A98;
+    color:var(--color--white)
+}
+
+.wrapFormDangKi__link__app--Google {
+    background-color:var(--color--white)
+}
+
+.wrapFormDangKi__link__icon {
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+.wrapFormDangKi__link__app--SMS {
+    background-color: rgb(1, 211, 137);
+    color:var(--color--white)
+}
+
+.modal__container {
+    width: 50rem;
+
+}

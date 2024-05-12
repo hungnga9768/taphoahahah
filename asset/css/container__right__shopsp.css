@@ -1,0 +1,90 @@
+.container__right__listSP {
+    margin-top: 10px;
+}
+
+.shop__SP:hover {
+
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.shop__SP {
+    background-color: var(--color--white);
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    position: relative;
+    display: block;
+    min-height: 315px;
+    text-decoration: none;
+    color: var(--color-textchinh);
+    transition: transform 0.1s ease-out;
+}
+
+.shop__SP__img {
+    padding-top: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.shop__SP__textcontent {
+    font-size: 1.6rem;
+    margin: 10px 5px 10px 10px;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 3.2rem;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.shop__SP__wrap-giaca {
+    text-align: center;
+
+    padding-left: 10px;
+}
+
+.shop__SP__wrap-giaca__goc {
+    text-decoration: line-through;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.shop__SP__wrap-giaca__sale {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--color-chudao);
+
+}
+
+.shop__SP__icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.shop__SP__icon__heart i {
+    font-size: 1.4rem;
+    color: var(--color-text-mo1);
+}
+
+
+
+.shop__SP__aboutSP {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 10px 10px;
+}
+
+.shop__SP__aboutSP__nameshop {
+    font-size: 1.2rem;
+    color: var(--color-textchinh);
+}
+
+.shop__SP__aboutSP__from {
+    font-size: 1.2rem;
+    color: var(--color-textchinh);
+
+}
